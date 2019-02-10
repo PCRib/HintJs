@@ -23,12 +23,16 @@ const IndexPage = () => (
               minHeight:'15em',
               display: "flex",
               flexDirection: "column",
-              justifyContent: 'space-evenly',
+              justifyContent: 'space-around',
               borderRadius:'10px',
               padding: "2em"
             }}>
-            <h3> Blog</h3>
-              <p>Read about what I've been up to</p>
+            <h3 style={{
+              margin:'0'
+            }}> Blog</h3>
+              <p style={{
+              fontSize:'0.75em'
+            }}>Read about what I've been up to</p>
               <p>Learn more</p>
           </div>
         </Link>
@@ -41,12 +45,16 @@ const IndexPage = () => (
               minHeight:'15em',
               display: "flex",
               flexDirection: "column",
-              justifyContent: 'center',
+              justifyContent: 'space-around',
               borderRadius:'10px',
               padding: "2em"
             }}>
-            <h3>About</h3>
-              <p>A little about me and how I strive to be more in this field</p>
+            <h3 style={{
+              margin:'0'
+            }}>About</h3>
+              <p style={{
+              fontSize:'0.75em'
+            }}>A little about me and how I strive to be more in this field</p>
               <p>Learn more</p>
           </div>
         </Link>
@@ -59,12 +67,16 @@ const IndexPage = () => (
               minHeight:'15em',
               display: "flex",
               flexDirection: "column",
-              justifyContent: 'center',
+              justifyContent: 'space-around',
               borderRadius:'10px',
               padding: "2em"
             }}>
-            <h3>Contact</h3>
-            <p>Get info on how to reach me</p>
+            <h3 style={{
+              margin:'0'
+            }}>Contact</h3>
+            <p style={{
+              fontSize:'0.75em'
+            }}>Get info on how to reach me</p>
             <p>Learn more</p>
           </div>
         </Link>

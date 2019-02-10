@@ -9,19 +9,22 @@ const BlogPage = ({data}) => (
     <h1>Latest Posts</h1>
     <div style={{
       display: 'flex',
-      justifyContent: 'space-between'
+      // justifyContent: 'space-between',
+      flexWrap: 'wrap'
     }}>
     {data.allMarkdownRemark.edges.map((post,index) =>(
       
         <div style={{
           boxShadow: "0px 4px 15px -4px rgba(0,0,0,0.75)",
+          boxSizing:'border-box',
           // padding: "0px 25px",
-          width: "23%",
+          width: "15em",
           minHeight:'15em',
           display: "flex",
           flexDirection: "column",
           justifyContent: 'center',
-          borderRadius:'10px'
+          borderRadius:'10px',
+          margin: '1em 2em 0 0'
         }} key={index}>
           <div style={{
             display: "flex",
@@ -62,7 +65,7 @@ const BlogPage = ({data}) => (
 
 export const pageQuery = graphql`
     query BlogIndexQuery{  
-        allMarkdownRemark {
+        allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }){
           edges{
             node {
               id
@@ -75,7 +78,7 @@ export const pageQuery = graphql`
             }
           }
         }
-    }
+      }
 `
 
 export default BlogPage
