@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'PCR Portfolio Blog',
+    title: 'HintsJs',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

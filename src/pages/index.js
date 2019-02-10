@@ -32,7 +32,7 @@ const IndexPage = () => (
             }}> Blog</h3>
               <p style={{
               fontSize:'0.75em'
-            }}>Read about what I've been up to</p>
+            }}>Read about what we've been up to</p>
               <p>Learn more</p>
           </div>
         </Link>
@@ -54,7 +54,7 @@ const IndexPage = () => (
             }}>About</h3>
               <p style={{
               fontSize:'0.75em'
-            }}>A little about me and how I strive to be more in this field</p>
+            }}>A little about us and how we strive to learn more</p>
               <p>Learn more</p>
           </div>
         </Link>
@@ -76,7 +76,7 @@ const IndexPage = () => (
             }}>Contact</h3>
             <p style={{
               fontSize:'0.75em'
-            }}>Get info on how to reach me</p>
+            }}>Get info on how to reach us</p>
             <p>Learn more</p>
           </div>
         </Link>

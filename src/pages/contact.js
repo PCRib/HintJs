@@ -5,7 +5,7 @@ const ContactPage = () => (
     <Layout>
       <div>
         <h1>Contact Me</h1>
-        <p>If you like what you see Contact me @ </p>
+        <p>If you like what you see Contact us @ </p>
       </div>
     </Layout>
   )
