@@ -6,7 +6,7 @@ import Layout from '../components/layout'
 
 const IndexPage = () => (
   <Layout>
-    <h1>Welcome to my Portfolio Blog</h1>
+    <h1>Welcome to our Blog</h1>
     <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
       {/* <Image /> */}
     </div>
