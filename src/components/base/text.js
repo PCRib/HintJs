@@ -18,7 +18,7 @@ const HeaderOne = styled.h1`
   margin: ${spacing.lg} 0;
   font-family: ${fonts.header.family};
   font-size: ${fonts.header.sizes.lg};
-  line-height: ${fonts.header.sizes.lg};
+  line-height: 2.5rem;
   color: ${props => props.diminished ? colour.diminished : colour.black};
 `
 
