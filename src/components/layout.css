@@ -199,6 +199,9 @@ html {
 *:after {
   box-sizing: inherit;
 }
+*::selection {
+  background: #FCEB02;
+}
 body {
   color: hsla(0, 0%, 0%, 0.8);
   font-family: georgia, serif;
