@@ -5,6 +5,7 @@ import { spacing, fonts, colour } from '../../util/styles'
 const Logo = styled.h1`
   display: block;
   width: 100vw;
+  margin-top: 1rem;
   font-family: 'Playfair Display', serif;
   font-weight: lighter;
   font-size: 2.5rem;
