@@ -2,14 +2,12 @@ import React from 'react'
 import {Link, graphql } from 'gatsby'
 
 import Layout from '../components/layout'
-// import Image from '../components/image'
 
 const BlogPage = ({data}) => (
   <Layout>
     <h1>Latest Posts</h1>
     <div style={{
       display: 'flex',
-      // justifyContent: 'space-between',
       flexWrap: 'wrap'
     }}>
     {data.allMarkdownRemark.edges.map((post,index) =>(
