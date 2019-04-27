@@ -14,8 +14,8 @@ const NavList = styled.ul`
     justify-content: center;
 `
 const NavListItem = styled.li`
-    margin-right: 1rem;
-    font-family: 'Playfair Display' serif;
+    margin: 0 0.75rem;
+    font-family: 'Playfair Display', serif;
     font-size: 1rem;
 `
 
