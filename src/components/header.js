@@ -6,8 +6,11 @@ import { Logo } from './base/text'
 import './header.css'
 
 const HeaderContainer = styled.div`
-  display: 'flex';
-  justify-content: 'space-between';
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 `
 
 const Header = ({ siteTitle }) => (

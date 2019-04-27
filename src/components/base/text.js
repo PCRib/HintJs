@@ -3,11 +3,13 @@ import styled from 'styled-components'
 import { spacing, fonts, colour } from '../../util/styles'
 
 const Logo = styled.h1`
-  display: inline-block;
+  display: block;
+  width: 100vw;
   font-family: 'Playfair Display', serif;
   font-weight: lighter;
   font-size: 2.5rem;
   text-decoration: none;
+  text-align: center;
   color: black;
 `
 
