@@ -1,7 +1,7 @@
 ---
 date: "2018-11-04"
 path: "/third-post"
-title: 'My Third Blog Post'
+title: 'This title is short'
 author: "PCR"
 ---
 

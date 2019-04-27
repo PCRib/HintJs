@@ -1,8 +1,8 @@
 ---
 date: "2018-11-02"
 path: "/first-post"
-title: 'The Sample Blog post'
-author: "PCR"
+title: "I'm gonna get ya"
+author: "Alex Jones"
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consectetur adipiscing elit ut aliquam purus sit. Nam at lectus urna duis. In pellentesque massa placerat duis ultricies lacus sed turpis. Cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum. Amet purus gravida quis blandit. 
