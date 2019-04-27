@@ -19,6 +19,7 @@ const HeaderOne = styled.h1`
   font-family: ${fonts.header.family};
   font-size: ${fonts.header.sizes.lg};
   line-height: ${fonts.header.sizes.lg};
+  color: ${props => props.diminished ? colour.diminished : colour.black};
 `
 
 const HeaderTwo = styled.h2`
@@ -26,7 +27,7 @@ const HeaderTwo = styled.h2`
   font-family: ${fonts.header.family};
   font-size: ${fonts.header.sizes.md};
   line-height: ${fonts.header.sizes.lg};
-  color: ${colour.black};
+  color: ${props => props.diminished ? colour.diminished : colour.black};
 `
 
 const Body = styled.p`
