@@ -1,17 +1,13 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
+import { Body, HeaderOne } from '../components/base/text'
 
 const AboutPage = () => {
   return (
-    <Layout>  
-        <div>
-            <h1>About Us</h1>
-            <p>We're Full Stack Developers</p>
-            <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
-            </div>
-            <Link to="/">Go to Homepage</Link>
-        </div>
+    <Layout>
+        <HeaderOne>About Us</HeaderOne>
+        <Body>We're Full Stack Developers</Body>
     </Layout>
   )
 }
