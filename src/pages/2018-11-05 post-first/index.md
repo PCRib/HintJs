@@ -1,7 +1,7 @@
 ---
 date: "2018-11-05"
 path: "/firstest-post"
-title: 'My Real Blog Post'
+title: 'I am Spicy P 🌶'
 author: "PCR"
 ---
 
