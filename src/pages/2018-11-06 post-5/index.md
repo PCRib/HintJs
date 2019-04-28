@@ -1,7 +1,7 @@
 ---
 date: "2018-11-06"
 path: "/BlogPost5"
-title: 'Adding to Git'
+title: 'Paulo finally realizes that Git is important'
 author: "PCR"
 ---
 

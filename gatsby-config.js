@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'HintsJs',
+    title: 'Hints',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -35,5 +35,24 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Lato`,
+            subsets: [`latin`],
+          },
+          {
+            family: `Merriweather`,
+            subsets: [`latin`],
+          },
+          {
+            family: `Playfair Display`,
+            subsets: [`latin`]
+          }
+        ],
+      },
+    }
   ],
 }
