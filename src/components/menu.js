@@ -17,6 +17,7 @@ const NavListItem = styled.li`
     margin: 0 0.75rem;
     font-family: 'Playfair Display', serif;
     font-size: 1rem;
+    text-decoration: underline;
 `
 
 const navigationItems = [
