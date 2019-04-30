@@ -3,7 +3,6 @@ import { Link } from 'gatsby'
 import styled from 'styled-components'
 import Menu from './menu'
 import { Logo } from './base/text'
-import './header.css'
 
 const HeaderContainer = styled.div`
   display: flex;
