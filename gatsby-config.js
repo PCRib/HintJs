@@ -40,11 +40,7 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Lato`,
-            subsets: [`latin`],
-          },
-          {
-            family: `Merriweather`,
+            family: `Montserrat`,
             subsets: [`latin`],
           },
           {
@@ -52,6 +48,12 @@ module.exports = {
             subsets: [`latin`]
           }
         ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `./src/util/typography`,
       },
     }
   ],

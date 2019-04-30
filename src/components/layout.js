@@ -14,7 +14,7 @@ const meta = [
 
 const ContentContainer = styled.main`
   margin: 0 auto;
-  max-width: 960px;
+  max-width: 740px;
   padding: 1rem;
 `
 
