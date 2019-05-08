@@ -3,6 +3,7 @@ import {Link, graphql } from 'gatsby'
 import styled from 'styled-components'
 import Layout from '../components/layout'
 import { HeaderOne } from '../components/base/text'
+import Hero from '../components/blog-hero'
 import BlogCard from '../components/blog-card'
 
 const PageTitle = styled(HeaderOne)`
@@ -10,12 +11,16 @@ const PageTitle = styled(HeaderOne)`
 `
 
 const BlogPage = ({data}) => (
-  <Layout>
-    <PageTitle>Latest Posts</PageTitle>
-    {data.allMarkdownRemark.edges.map((post,index) => (
-      <BlogCard {...post.node.frontmatter} key={index} />
-    ))}
-  </Layout>
+  <>
+    
+    <Layout>
+    <Hero></Hero>
+      {/* <PageTitle>Latest Posts</PageTitle> */}
+      {data.allMarkdownRemark.edges.map((post,index) => (
+        <BlogCard {...post.node.frontmatter} key={index} />
+      ))}
+    </Layout>
+  </>
 )
 
 export const pageQuery = graphql`
