@@ -1,18 +1,9 @@
 import React from 'react'
-import styled from "styled-components"
+import styled from 'styled-components'
 import { colour } from '../util/styles'
-
-const Hero = styled.div`
-    width: 100%;
-    height: 30vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url('https://images.unsplash.com/photo-1499334758287-dc8133b315e9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')
-`
+import { StaticQuery, graphql } from 'gatsby'
+// import Img from "gatsby-image"
+import BackgroundImage from 'gatsby-background-image'
 
 const Title = styled.h1`
     color: ${colour.white};
@@ -20,14 +11,48 @@ const Title = styled.h1`
     font-family: 'Lato', sans-serif;
     font-weight: bold;
     font-size: 2.5rem;
+    justify-self: center;
+    align-self: center;
 `
 
+const Hero = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    `
+const HeroImage = styled(BackgroundImage)`
+    height: 30vh;
+`
+
+function renderImage({file}) {
+    console.log({file})
+    return <Hero>
+            <HeroImage
+            fluid={file.childImageSharp.fluid}
+            >
+            <Title>Check out the latest posts below</Title>
+            </HeroImage> 
+            </Hero>       
+}
+
 const BlogHero = () => (
-    <Hero>
-        <Title>Need a Rubber Duck? Talk to the blog!</Title>
-    </Hero>
-)
+    <StaticQuery
+    query = {graphql`
+    query {
+        file(relativePath: {eq: "ducks.jpeg"}) {
+          childImageSharp {
+            fluid(maxWidth: 1000 ) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+    `}
+    
+    render ={renderImage}
+    />
+    
+);
 
 export default BlogHero
- 
 

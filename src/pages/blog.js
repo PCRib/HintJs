@@ -1,10 +1,12 @@
 import React from 'react'
-import {Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import styled from 'styled-components'
 import Layout from '../components/layout'
+import Img from "gatsby-image"
 import { HeaderOne } from '../components/base/text'
-import Hero from '../components/blog-hero'
+// import Hero from '../components/blog-hero'
 import BlogCard from '../components/blog-card'
+import BlogHero from '../components/blog-hero';
 
 const PageTitle = styled(HeaderOne)`
   padding-left: 1rem;
@@ -12,12 +14,11 @@ const PageTitle = styled(HeaderOne)`
 
 const BlogPage = ({data}) => (
   <>
-    
     <Layout>
-    <Hero></Hero>
-      {/* <PageTitle>Latest Posts</PageTitle> */}
+    <BlogHero/>
+      <PageTitle>Latest Posts</PageTitle>
       {data.allMarkdownRemark.edges.map((post,index) => (
-        <BlogCard {...post.node.frontmatter} key={index} />
+         <BlogCard {...post.node.frontmatter} key={index} />
       ))}
     </Layout>
   </>
@@ -38,7 +39,8 @@ export const pageQuery = graphql`
             }
           }
         }
-      }
+    }
+    
 `
 
 export default BlogPage
