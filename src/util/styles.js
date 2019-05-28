@@ -1,19 +1,4 @@
 
-const fonts = {
-  header: {
-    family: "'Lato', sans-serif",
-    sizes: {
-      sm: '1rem',
-      md: '1.5rem',
-      lg: '2rem'
-    }
-  },
-  body: {
-    family: 'Merriweather, Georgia, Times New Roman, Times, serif',
-    size: '1rem'
-  },
-}
-
 const colour = {
   black: '#232323',
   diminished: '#23232387',
@@ -30,7 +15,6 @@ const spacing = {
 }
 
 export {
-  fonts,
   colour,
   spacing,
 }
