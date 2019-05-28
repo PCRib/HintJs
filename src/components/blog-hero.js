@@ -2,17 +2,15 @@ import React from 'react'
 import styled from 'styled-components'
 import { colour } from '../util/styles'
 import { StaticQuery, graphql } from 'gatsby'
-// import Img from "gatsby-image"
 import BackgroundImage from 'gatsby-background-image'
 
 const Title = styled.h1`
+    margin: 3rem 3.5rem;
     color: ${colour.white};
     text-shadow: 4px 3px ${colour.black};
     font-family: 'Lato', sans-serif;
     font-weight: bold;
-    font-size: 2.5rem;
-    justify-self: center;
-    align-self: center;
+    font-size: 3rem;
 `
 
 const Hero = styled.div`

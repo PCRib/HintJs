@@ -2,9 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import styled from 'styled-components'
 import Layout from '../components/layout'
-import Img from "gatsby-image"
 import { HeaderOne } from '../components/base/text'
-// import Hero from '../components/blog-hero'
 import BlogCard from '../components/blog-card'
 import BlogHero from '../components/blog-hero';
 
