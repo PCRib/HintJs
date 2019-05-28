@@ -1,21 +1,25 @@
 import React from 'react'
-import {Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import styled from 'styled-components'
 import Layout from '../components/layout'
 import { HeaderOne } from '../components/base/text'
 import BlogCard from '../components/blog-card'
+import BlogHero from '../components/blog-hero';
 
 const PageTitle = styled(HeaderOne)`
   padding-left: 1rem;
 `
 
 const BlogPage = ({data}) => (
-  <Layout>
-    <PageTitle>Latest Posts</PageTitle>
-    {data.allMarkdownRemark.edges.map((post,index) => (
-      <BlogCard {...post.node.frontmatter} key={index} />
-    ))}
-  </Layout>
+  <>
+    <Layout>
+    <BlogHero/>
+      <PageTitle>Latest Posts</PageTitle>
+      {data.allMarkdownRemark.edges.map((post,index) => (
+         <BlogCard {...post.node.frontmatter} key={index} />
+      ))}
+    </Layout>
+  </>
 )
 
 export const pageQuery = graphql`
@@ -33,7 +37,8 @@ export const pageQuery = graphql`
             }
           }
         }
-      }
+    }
+    
 `
 
 export default BlogPage
